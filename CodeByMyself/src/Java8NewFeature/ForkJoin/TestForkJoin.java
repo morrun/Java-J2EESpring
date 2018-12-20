@@ -15,6 +15,7 @@ public class TestForkJoin {
 //		t.invoke();
 		System.out.println(t.join() + " later");
 		System.out.println("hellp");
+		System.out.println(ForkJoinPool.getCommonPoolParallelism());
 	}
 
 	private static int[] genArray() {
