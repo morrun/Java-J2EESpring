@@ -1,0 +1,12 @@
+<div>
+	<h1>This is header</h1>
+	<a routerLink="/user">user</a>
+	<hr>
+	<a routerLink="/products">products</a>
+	<hr>
+	<a routerLink="/lazyModule">LazyModule</a>
+	<hr>
+	<a [routerLink]="[{ outlets: { 'second': ['products2'] } }]">product2</a>
+	<hr>
+	<a [routerLink]="[{ outlets: { 'second': ['user2'] } }]">user2</a>
+</div>
