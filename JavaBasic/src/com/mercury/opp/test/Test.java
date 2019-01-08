@@ -36,6 +36,14 @@ public class Test {
 		}
 		char[] chars = new char[] {'\u0097'}; 
 		
+		try {
+			throw new RuntimeException();
+		}catch (RuntimeException e) {
+			System.out.println("catch");
+			e.printStackTrace();
+		}finally {
+			System.out.println("finally");
+		}
 		String str = new String(chars); 
 		System.out.println(str);
 		byte[] bytes = str.getBytes();

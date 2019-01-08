@@ -33,7 +33,6 @@ public class Test extends RecursiveTask<Integer> {
 		Test test2 = new Test(array,start + length/2, length % 2 == 0?length / 2:length / 2 + 1);
 //		test1.invoke();
 //		test2.invoke();
-		
 		return test1.invoke() + test2.invoke();
 	}
 

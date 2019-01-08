@@ -12,13 +12,15 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.*;
-public class StreamTest {
+public class StreamTest implements Cloneable {
 
 	public static void main(String[] args) throws IOException {
 		String str1 = "value1";
 		String str2 = "value1";
 		System.out.print(str1 == str2);
 		System.out.println(str1.equals(str2));
+
+		
 		// TODO Auto-generated method stub
 		// Example 1
 //		Map<String,String> map = new HashMap();
