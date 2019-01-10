@@ -107,11 +107,10 @@ public class StreamTest implements Cloneable {
 		map.put("11", "felix");
 		map.put("22", "fexil1");
 //		map.forEach(action);
+		
 		List<Map.Entry<String, String>> map1 = map.entrySet().stream()
 			.sorted((x1, x2) -> {
-				Integer i1 = Integer.parseInt(x1.getKey());
-				Integer i2 = Integer.parseInt(x2.getKey());
-				return i2 - i1;
+				return x2.getValue().compareTo(x1.getValue());
 			})
 			.collect(Collectors.toList());
 		map1.forEach(System.out::println);

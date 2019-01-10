@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { OrderComponent } from './order/order.component';
 import { CustomPipe } from '../Shared/Pipe/custom-pipe.pipe';
 import { OrderService } from '../Shared/Services/order.service';
+import { ColorChangeDirective } from '../Shared/Directive/color-change.directive';
 const routes: Routes = [
 	{
 		path: '',
@@ -15,7 +16,8 @@ const routes: Routes = [
 	],
 	declarations: [
 		OrderComponent,
-		CustomPipe
+		CustomPipe,
+		ColorChangeDirective
 	],
 	entryComponents: [],
 	providers: [OrderService]

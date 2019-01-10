@@ -9,7 +9,7 @@ import { FooterComponent } from './Home/Foot/footer.component';
 import { AuthRouteGuard } from './Shared/Guard/guard.service';
 import { CustomPipe } from './Shared/Pipe/custom-pipe.pipe';
 import { UserService } from './Shared/Services/user.service';
-
+import { TestComponent } from './Content/Test/test.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,11 +17,11 @@ import { UserService } from './Shared/Services/user.service';
     UserComponent,
     ProductComponent,
     FooterComponent,
-    // CustomPipe
+    TestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [AuthRouteGuard, UserService],
   bootstrap: [AppComponent]
