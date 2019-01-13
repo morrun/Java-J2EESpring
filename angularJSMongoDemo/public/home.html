@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJsMongodbDemo</title>
+	<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+	<script type="text/javascript" src="lib/js/angular.min.js"></script>
+	<script type="text/javascript" src="lib/js/angular-ui-router.min.js"></script> 
+	<script type="text/javascript" src="js/routing.js"></script>
+	<script type="text/javascript" src="js/home.js"></script>
+	<script type="text/javascript">
+		var app = angular.module("mainApp",["routing-module"]);
+	</script>
+</head>
+<body ng-app="mainApp" class="container">
+	<header>
+		<nav class="navbar navbar-default">
+			<ul class="nav navbar-nav">
+				<li>
+					<a ui-sref="home">Home</a>
+				</li>
+				<li>
+					<a ui-sref="add">Add</a>
+				</li>	
+			</ul>
+		</nav>
+	</header>
+	<div ui-view>
+	</div>
+</body>
+</html>

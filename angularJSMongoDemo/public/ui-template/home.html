@@ -1,0 +1,48 @@
+<div>
+<h1>All Users Information</h1>
+<table class="table table-bordered table-striped">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Operations</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="user in users|filt:type:text:min:max">
+			<td>{{user.name}}</td>
+			<td>{{user.age}}</td>
+			<td>{{user.city}}</td>
+			<td>{{user.state}}</td>
+			<td><a ref="" ng-click="delete(user)">delete</a>   |   <a ng-click="edit(user)" ui-sref="edit">edit</a></td>
+		</tr>
+	</tbody>
+</table>
+<h2>Search By Name, City, State</h2>
+<form>
+	<div class="form-group">
+		<label for="searchBy">Search By</label>
+		<select class="form-control" id="searchBy" ng-model="type">
+			<option></option>
+			<option>Name</option>
+			<option>City</option>
+			<option>State</option>
+		</select> 
+	</div>
+	<div class="form-group">
+		<label for="searchText">Search Text</label>
+		<input type="text" class="form-control" id="searchText" ng-model="text"> 
+	</div>
+</form> 
+<form>
+	<div class="form-group">
+		<label for="min">Min</label>
+		<input type="text" class="form-control" id="min" ng-model="min">
+	</div>
+	<div class="form-group">
+		<label for="max">Max</label>
+		<input type="text" class="form-control" id="max" ng-model="max">
+	</div>
+</div>

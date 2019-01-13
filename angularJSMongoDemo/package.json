@@ -1,0 +1,23 @@
+{
+  "name": "angularmongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "author": "morrun",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.7.5",
+    "angular-ui-router": "^1.0.20",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.2.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

@@ -11,7 +11,7 @@ public class Garage implements Serializable{
 		this.c1 = c1;
 		this.c2 = c2;
 	}
-	public static Garage getInstance() {
+	public static Garage getInstance(Computer c1, Computer c2) {
 		if (INSTANCE == null) {
 			synchronized (Garage.class) {
 				if (INSTANCE == null) {
