@@ -20,7 +20,6 @@ public class SortCollectionTest {
 		tm.put(new Computer("Dell",888, 2004), 9);
 		tm.put(new Computer("Acer",888, 2006), 11);
 		System.out.println(tm);
-		
 		// anonymous implementation
 //		Comparator<Trainer> trainerComparator = new Comparator<Trainer>() {
 //			@Override

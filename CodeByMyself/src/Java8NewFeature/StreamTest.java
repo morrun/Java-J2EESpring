@@ -25,7 +25,7 @@ public class StreamTest implements Cloneable {
 		// Example 1
 //		Map<String,String> map = new HashMap();
 		IntStream
-			.range(1, 10)
+			.range(1, 100)
 			.skip(4)
 			.forEach(x -> System.out.println(x));
 		
@@ -66,6 +66,13 @@ public class StreamTest implements Cloneable {
 		List<String> people = Arrays.asList(names);
 		String s = "aa";
 		s.isEmpty();
+		System.out.println("start***************");
+		people.stream()
+		.forEach(System.out::println);
+		System.out.println("mid_______________");
+		people.parallelStream()
+				.forEach(System.out::println);
+		System.out.println("end*******************");
 		people.stream()
 			.filter(x -> x.startsWith("A"))
 			.map(x -> x.toLowerCase())

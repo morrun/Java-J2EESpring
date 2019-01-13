@@ -6,7 +6,6 @@ public class IPhoneAdapter implements IPhone {
 	SamsungCharger sc = new SamsungCharger();
 	@Override
 	public String charge(String str) {
-		// TODO Auto-generated method stub
 		return sc.charging("IPhone adapter help " + str);
 	}
 
