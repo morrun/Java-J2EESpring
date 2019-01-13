@@ -12,7 +12,12 @@ public class IterationTest {
 	public static List<String> list;
 	public static Set<String> set;
 	public static Map<String,Integer> map;
+//	Collection
+	public Thread t;
 	
+	public IterationTest() {
+		super();
+	}
 	static {
 		list = new ArrayList();
 		list.add("beauty");
@@ -50,33 +55,8 @@ public class IterationTest {
 		set.forEach(null);
 		System.out.println(set);
 	}
-	public static void iterationMap() {
-	//	System.out.println(mao);
-		
-		//1, for loop: traditional
-		
-		//2, for loop: fancy
-		for (Map.Entry<String, Integer> me : map.entrySet()) {
-			System.out.println(me.getKey() + "->" + me.getValue());
-		}
-		
-		for (String s : map.keySet()) {
-			System.out.println(s + "->>" + map.get(s));
-		}
-		// 3, foreach
-		
-		// 4, iterator
+	public static void iterationMap() { 
 		Iterator<Map.Entry<String,Integer>> i = map.entrySet().iterator();
-		while (i.hasNext()) {
-			Map.Entry<String, Integer> me = i.next();
-			System.out.println(me.getKey() + "- >" + me.getValue());
-		}
-		
-		Iterator<String> it = map.keySet().iterator();
-		while (it.hasNext()) {
-			String s = it.next();
-			System.out.println(s + "->>>" + map.get(s));
-		}
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

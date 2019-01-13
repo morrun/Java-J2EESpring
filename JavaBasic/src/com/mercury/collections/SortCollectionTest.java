@@ -3,7 +3,9 @@ package com.mercury.collections;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
+import java.util.TreeSet;
 
 public class SortCollectionTest {
 	
@@ -11,6 +13,7 @@ public class SortCollectionTest {
 		// TODO Auto-generated method stub
 //		String s;
 //		System.out.println(s);
+		Set<Computer> ts = new TreeSet();
 		Map<Computer, Integer> tm = new TreeMap();
 		tm.put(new Computer("Mac",1000, 2000), 2);
 		tm.put(new Computer("Lenovo",999, 2003),32);
