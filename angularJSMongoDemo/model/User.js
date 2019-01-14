@@ -6,9 +6,9 @@ var UserSchema = new Schema({
 	age:Number,
 	city:String,
 	state:String
-},{collections:'users'});
+},{collections:'Testusers'});
 
-var User = mongoose.model('User',UserSchema);
+var User = mongoose.model('employees',UserSchema);
 
 module.exports = User;
 

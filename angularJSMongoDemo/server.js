@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
-var promise = mongoose.connect("mongodb://172.17.0.2:27017/mercury",{
+var promise = mongoose.connect("mongodb://localhost:27017/mercury",{
 	useNewUrlParser: true,
 	useCreateIndex: true
 });
